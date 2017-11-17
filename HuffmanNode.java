@@ -2,14 +2,16 @@ package com.huffman;
 
 public class HuffmanNode implements Comparable<HuffmanNode>{
 
-	private char item;
-	private int frequency;
-	private HuffmanNode right;
-	private HuffmanNode left;
+	public char item;
+	public int frequency;
+	public HuffmanNode right;
+	public HuffmanNode left;
 	
 	public HuffmanNode(char item,int frequency) {
 		this.setItem(item);
 		this.setFrequency(frequency);
+		right=null;
+		left=null;
 	}
 
 	public char getItem() {
